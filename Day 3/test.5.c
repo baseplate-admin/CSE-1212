@@ -3,9 +3,9 @@
 void main (){
     int customer_type,purchase_amount;
     double payable_amount;
-    printf("Enter 1 for regular customer and enter 2 for new customer:\n");
+    printf("Enter 1 for regular customer and enter 2 for new customer: ");
     scanf("%d",&customer_type);
-    printf("Enter purchase amount:\n");
+    printf("Enter purchase amount: ");
     scanf("%d",&purchase_amount);
 
     // regular means 1
@@ -29,5 +29,5 @@ void main (){
     }else {
         printf("Invalid input.");
     }
-    printf("%lf",payable_amount);
+    printf("%.2f\n",payable_amount);
 }

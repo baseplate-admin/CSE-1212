@@ -5,7 +5,7 @@
 
 void main(){
     int n;
-    printf("Enter a number to check 'Even' or 'Odd': \n");
+    printf("Enter a number to check 'Even' or 'Odd': ");
     scanf("%d", &n);
     if (n%2 == 0){
         printf("Even\n");
