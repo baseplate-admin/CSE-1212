@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include <math.h>
 void main (){
+    printf("This program checks if a number is even or odd.\n");
+    printf("If a number is even it prints the square of the number\n");
+    printf("else prints the cube of that number\n");
     int number;
-    printf("Enter a number.\n");
+    printf("Enter a number : ");
     scanf("%d",&number);
 
 

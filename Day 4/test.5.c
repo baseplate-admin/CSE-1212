@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 void main(){
+    printf("This program checks the number of a student\n");
     int number;
     printf("Enter number of a student: ");
     scanf("%d",&number);

@@ -11,7 +11,7 @@ void main(){
         printf("%d^2",start);
 
         if(start != range) {
-            printf("+ ",start);
+            printf(" + ");
             
         }
         sum = sum + pow(start,2);

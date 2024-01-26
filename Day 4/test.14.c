@@ -11,7 +11,7 @@ void main(){
         printf("%d^3",start);
 
         if(start != range) {
-            printf("+ ",start);
+            printf(" + ");
             
         }
         sum = sum + pow(start,3);

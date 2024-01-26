@@ -10,7 +10,7 @@ void main(){
         printf("%d",start);
 
         if(start != range) {
-            printf("+",start);
+            printf("+");
             
         }
         sum = sum + start;

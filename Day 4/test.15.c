@@ -2,7 +2,7 @@
 #include <math.h>
 
 void main(){
-    int sum = 0,start=1;
+    int sum = 0,start=0;
     int range;
     printf("Enter number range to check :");
     scanf("%d",&range);
@@ -12,7 +12,7 @@ void main(){
         printf("%d",x);
 
         if(start != range) {
-            printf(" + ",start);
+            printf(" + ");
             
         }
         sum = sum + x;

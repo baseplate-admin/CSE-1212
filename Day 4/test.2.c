@@ -7,6 +7,7 @@ void main(){
 
     double a ,b ,c;
     double root_1,root_2;
+    printf("This program finds the value of quadratic equations\n");
     printf("Enter the value of a,b,c seperated by whitespace. Eg: 1 1 0\n");
     scanf("%lf %lf %lf",&a,&b,&c);
 
