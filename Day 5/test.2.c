@@ -3,7 +3,7 @@
 
 void main(){
     int n,r;
-    printf("Enter numbers in order. n,r");
+    printf("Enter numbers in order (n r):");
     scanf("%d %d",&n,&r);
 
     int n_factorial = 1;
@@ -20,15 +20,15 @@ void main(){
         carry--;
     }
 
-    int n_minus_one_factorial= 1;
-    carry = (n-1);
+    int n_minus_r_factorial= 1;
+    carry = (n-r);
     while (carry){
-        n_minus_one_factorial = n_minus_one_factorial * carry;
+        n_minus_r_factorial = n_minus_r_factorial * carry;
         carry--;
     }
 
-    double ncr  = n_factorial/(r_factorial*n_minus_one_factorial);
-    printf("%lf",ncr);
+    double ncr  = n_factorial/(r_factorial*n_minus_r_factorial);
+    printf("%lf\n",ncr);
     
 
 }
