@@ -1,34 +1,25 @@
 #include <stdio.h>
 
-
 void main(){
     int n,r;
     printf("Enter numbers in order (n r):");
-    scanf("%d %d",&n,&r);
+    scanf("%d %d",&n, &r);
 
     int n_factorial = 1;
-    int carry = n;
-    while(carry){
+    for(int carry=n;carry>0;carry--){
         n_factorial = carry * n_factorial;
-        carry--;
     }
 
     int r_factorial = 1;
-    carry = r;
-    while(carry){
+    for(int carry=r;carry>0;carry--){
         r_factorial = carry * r_factorial;
-        carry--;
     }
 
     int n_minus_r_factorial= 1;
-    carry = (n-r);
-    while (carry){
+    for(int carry=(n-r);carry>0;carry--){
         n_minus_r_factorial = n_minus_r_factorial * carry;
-        carry--;
     }
 
     double ncr  = n_factorial/(r_factorial*n_minus_r_factorial);
     printf("%lf\n",ncr);
-    
-
 }

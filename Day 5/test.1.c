@@ -5,11 +5,10 @@ void main(){
     printf("Enter a number to check factorial :");
     scanf("%d",&number);
     
-    int carry = number;
+
     int sum = 1;
-    while (carry){
+    for (int carry=number;carry>0;carry--){
         sum = sum * carry;
-        carry--;
     }
     printf("%d\n",sum);
 

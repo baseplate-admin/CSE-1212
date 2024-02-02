@@ -4,12 +4,11 @@ void main(){
     printf("Enter number to check factors: ");
     int n;
     scanf("%d",&n);
-    int carry=1;
+   
     printf("Factors are: ");
-    while (carry <= n)
+    for (int carry=1;carry <= n;carry++)
     {
         if(n % carry == 0) printf("%d ",carry);
-        carry++;
     }
     printf("\n");
 }
