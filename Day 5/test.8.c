@@ -1,14 +1,15 @@
 #include <stdio.h>
-#include<math.h>
 
 void main(){
-    int base,power;
-
-    scanf("%d %d",&base, &power);
-
-    long long number = pow(base,power);
-
-    printf("%lu",number);
-    printf("\n");
+    int n;
+    printf("Enter a number to print it's remainder: ");
+    scanf("%d",&n);
+    int d;
     
+    while(n){
+        d = n % 10;
+        n = n / 10 ;
+        printf("%d",d);
+    }
+
 }

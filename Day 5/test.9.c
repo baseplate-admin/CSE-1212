@@ -1,21 +1,15 @@
 #include <stdio.h>
 
-
 void main(){
-    int n, largest = 0;
-    
-    printf("Enter the number of use cases :");
+    int n;
+    printf("Enter a number to print it's remainder: ");
     scanf("%d",&n);
-    printf("\n");
-
+    int d;
+    
     while(n){
-        int x;
-        scanf("%d",&x);
-        if(largest < x){
-            largest = x;
-        }
-        n--;
+        d = n % 10;
+        n = n / 10 ;
     }
-    printf("%d", largest);
-    printf("\n");
+    printf("%d",d);
+
 }
