@@ -1,4 +1,4 @@
-#include <stdio.h>
+    #include <stdio.h>
 
 int main()
 {
@@ -6,5 +6,7 @@ int main()
     printf("Enter decimal number: ");
     scanf("%d",&n);
     printf("Hexadecimal number is: %X", n);
+    printf("\n");
+    printf("Decimal Number is: %d", n);
     return 0;
 }

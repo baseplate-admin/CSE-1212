@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(){
     int n;
@@ -11,20 +12,18 @@ int main(){
     while(n){
         temp = n%16;
         if(temp<10){
-            temp = temp+48;
+            temp = temp + '0';
         }else{
-            temp = temp+55;
+            temp = temp+ 'A' - 10;
 
         }
         hex[i++] = temp;
         n = n/16;
     }
     printf("Hex is: ");
-    for (int j =i;j!=0;j--){
+    for (int j =i;j>0;j--){
         printf("%c", hex[j]);
     }
-
+    printf("\n");
     return 0;
-
-
 }

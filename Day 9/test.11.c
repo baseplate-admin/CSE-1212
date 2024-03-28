@@ -13,7 +13,8 @@ int main(){
     int carry = 0;
     while(carry!= strlen(a)){
         char x = a[carry];
-        if (x == 'a'||x=='e'||x=='i'||x=='o'||x=='u' || x == 'A'||x=='E'||x=='I'||x=='O'||x=='U' ){
+        if (x == 'a'||x=='e'||x=='i'||x=='o'||x=='u'
+            || x == 'A'||x=='E'||x=='I'||x=='O'||x=='U' ){
             vowels++;
         }
         else if ((x>='A' && x<='Z')||(x>='a' && x<='z')){
@@ -29,14 +30,10 @@ int main(){
         }
         carry++;
     }
-
     printf("Digits : %d\n",digits);
     printf("Vowels : %d\n",vowels);
     printf("Consonants : %d\n",consonants);
     printf("Whitespace : %d\n",whitespace);
-
-
-
 }
 
 

@@ -9,8 +9,5 @@ int pass(char s[]){
 int main(){
     char s[100];
     gets(s);
-
     pass(s);
-
-
 }
